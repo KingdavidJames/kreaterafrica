@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Kreater - Home</title>
+        <title>Kreater - Delivering excellence one shipment at a time</title>
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -20,43 +20,57 @@
 
     <body class="scrollbar scrollbar-lady-lips">
         <div class="all">
-            <section class="part-1 py-5" data-aos="fade-in">
-                <div class="container">
-                    <div class="row">
-                        <nav class="navbar navbar-expand-lg" data-aos="slide-down">
-                            <div class="container">
-                                <a class="navbar-brand me-5" href="#"><img src="images/Logo-1.png" alt=""></a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                                        <li class="nav-item mx-4">
-                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item mx-4">
-                                            <a class="nav-link" href="#">Dashboard</a>
-                                        </li>
-                                        <li class="nav-item mx-4">
-                                            <a class="nav-link" href="#">Track Goods</a>
-                                        </li>
-                                    </ul>
-                                    <form class="d-flex " role="search">
-                                        <!-- <input class="form-control me-2" type="search" placeholder="Search"
+            <section class="part-1" data-aos="fade-in">
+                <div class="kreater-nav bg-navbar py-3">
+                    <nav class="navbar navbar-expand-lg" data-aos="slide-down">
+                        <div class="container">
+                            <a class="navbar-brand me-5" href="#"><img src="./images/logo-1.svg" width="90%" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li class="nav-item mx-4">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item mx-4">
+                                        <a class="nav-link" href="#">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item mx-4">
+                                        <a class="nav-link" href="#">Track Goods</a>
+                                    </li>
+                                </ul>
+                                <div class="button-section">
+                                    <!-- <input class="form-control me-2" type="search" placeholder="Search"
                                         aria-label="Search"> -->
-                                        <button class="btn kreater-btn me-3">Get Started</button>
-                                        <img src="images/Profile-Pic.png" class="d-sm-hide" width="42px" alt="">
-                                    </form>
+                                    <button class="btn kreater-btn me-3">Log in</button>
+                                    <!-- <img src="images/Profile-Pic.png" class="d-sm-hide" width="42px" alt=""> -->
                                 </div>
                             </div>
-                        </nav>
-                    </div>
-                    <div class="part-one-details my-7">
+                        </div>
+                    </nav>
+                </div>
+                <div class="part-one-details my-7">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="ship-calc d-flex column-gap-5">
+                                    <div class="start-shipping text-center active-1">
+                                        <i class="bi bi-box-seam fs-3 start-ship-icon icon-color"></i>
+                                        <p class="mt-2 mb-0 start-ship-text icon-color">Start Shipping</p>
+                                    </div>
+                                    <div class="ship-calculator text-center">
+                                        <i class="bi bi-calculator fs-3 icon-color no-icon-style"></i>
+                                        <p class="no-style mt-2 mb-0 icon-color">Get Pricing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-lg-7" data-aos="slide-right">
-                                <div>
+                                <div class="" id="ship-content">
                                     <h1 class="head-text-1 mb-4">Delivering Excellence, <br><span
                                             class="text-orange">One
                                             shipment at a time.</span>
@@ -65,7 +79,11 @@
                                         import solutions
                                         across borders.
                                     </p>
-                                    <button class="btn kreater-btn mt-5">Request Early Access</button>
+                                    <div class="button-container mt-5">
+                                        <button class="btn kreater-btn me-4">Get Started For Free</button>
+                                        <button class="btn kreater-btn-3">Login <img src="./images/arrow-right.png"
+                                                alt=""></button>
+                                    </div>
                                     <div class="trustee mt-5">
                                         <p class="p-text-1">Trusted by:
                                             <img src="images/disgn-plus.png" class="trustee-img ms-4 me-1" width="42px"
@@ -78,6 +96,33 @@
                                                 alt="">
                                         </p>
 
+                                    </div>
+                                </div>
+                                <div class="hidden" id="ship-calc">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="name@example.com">
+                                        <label for="email">Email address</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="comments"></textarea>
+                                        <label for="comments">Comments</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="comments2"
+                                            style="height: 100px"></textarea>
+                                        <label for="comments2">Comments</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select-form"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="select-form">Works with selects</label>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +155,8 @@
                 <div class="container">
                     <div class="row mt-4 justify-content-between">
                         <div class="col-lg-4">
-                            <div class="k-border d-flex justify-content-center align-items-center mb-4" data-aos="slide-up">
+                            <div class="k-border d-flex justify-content-center align-items-center mb-4"
+                                data-aos="slide-up">
                                 <div class="k-border-icon me-3">
                                     <img src="./icons/Partnership.svg" alt="">
                                 </div>
@@ -119,7 +165,8 @@
                                     <p class="k-border-text">Efficient Logistics Solutions for Seamless Supply.</p>
                                 </div>
                             </div>
-                            <div class="k-border-2 d-flex justify-content-center align-items-center my-4" data-aos="slide-up">
+                            <div class="k-border-2 d-flex justify-content-center align-items-center my-4"
+                                data-aos="slide-up">
                                 <div class="k-border-icon me-3">
                                     <img src="./icons/Reliable.svg" alt="">
                                 </div>
@@ -128,7 +175,8 @@
                                     <p class="k-border-text">Efficient Logistics Solutions for Seamless Supply.</p>
                                 </div>
                             </div>
-                            <div class="k-border-2 d-flex justify-content-center align-items-center my-4" data-aos="slide-up">
+                            <div class="k-border-2 d-flex justify-content-center align-items-center my-4"
+                                data-aos="slide-up">
                                 <div class="k-border-icon me-3">
                                     <img src="./icons/Cost Effective.svg" alt="">
                                 </div>
@@ -150,7 +198,7 @@
             <section class="part-4 py-5">
                 <div class="container mb-5">
                     <div class="row">
-                        <div class="part-4-header text-center" data-aos="slide-down">
+                        <div class="part-4-header text-center">
                             <h2>Spreading smiles, one package at a time</h2>
                             <p>Track your shipments at all stages of the delivery process</p>
                         </div>
@@ -190,10 +238,12 @@
                     <div class="row">
                         <div class="testimonial-section">
                             <div class="auto-container">
-                                <div class="part-5-header text-center mb-5" data-aos="fade-up">
-                                    <h2 class="d-sm-hide">We’ve empowered businesses to ship with <br>ease and here’s what our community
+                                <div class="part-5-header text-center mb-5">
+                                    <h2 class="d-sm-hide">We’ve empowered businesses to ship with <br>ease and here’s
+                                        what our community
                                         thinks</h2>
-                                    <h2 class="d-sm-show">We’ve empowered businesses to ship with ease and here’s what our community
+                                    <h2 class="d-sm-show">We’ve empowered businesses to ship with ease and here’s what
+                                        our community
                                         thinks</h2>
                                 </div>
                                 <div class="testimonial-carousel owl-carousel owl-theme" data-aos="zoom-in-down">
@@ -288,33 +338,34 @@
                             <img src="./images/Group-992.png" class="amp-img" width="100%" alt="">
                         </div>
                         <div class="col-lg-8 shipment-details mt-5 ps-5">
-                            <h1 data-aos="slide-down">Shipments amplified</h1>
+                            <h1>Shipments amplified</h1>
                             <div class="row">
-                                <div class="col-lg-6 mt-3" data-aos="zoom-out-down">
+                                <div class="col-lg-6 mt-3">
                                     <h3 class="mt-2">24/7 Customer Support</h3>
                                     <p class="mt-3">Immediate response to inquiries and quick resolve to issues or
                                         complaints.</p>
                                 </div>
-                                <div class="col-lg-6 mt-3" data-aos="zoom-out-down">
+                                <div class="col-lg-6 mt-3">
                                     <h3 class="mt-2">Personalized Dashboard</h3>
                                     <p class="mt-3">Get to know the KG/CBM of each parcel delivered to our warehouse.
                                         Personalized shipping address and download invoice timely.</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6 mt-3" data-aos="zoom-out-down">
+                                <div class="col-lg-6 mt-3">
                                     <h3 class="mt-2">Effective Communication</h3>
                                     <p class="mt-3">Quick payment confirmation, timely update of shipment. Information
                                         update across all social media handle, customer emails and phone number.</p>
                                 </div>
-                                <div class="col-lg-6 mt-3" data-aos="zoom-out-down">
+                                <div class="col-lg-6 mt-3">
                                     <h3 class="mt-2">Tracking shipments</h3>
                                     <p class="mt-3">A real-time tracking system that allows customers to track their
                                         shipments at all stages of the delivery process from China to Nigeria.</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6" data-aos="slide-right"><button class="btn kreater-btn mt-5">Create a free
+                                <div class="col-lg-6"><button class="btn kreater-btn mt-5">Create
+                                        a free
                                         account</button></div>
                                 <div class="col-lg-6"></div>
                             </div>
@@ -324,7 +375,7 @@
             </section>
             <section class="part-7">
                 <div class="container">
-                    <div class="row py-5" data-aos="flip-left">
+                    <div class="row py-5">
                         <h2 class="faq-header text-center my-5">Frequently asked questions</h2>
                         <div class="accordion mt-2" id="accordionExample">
                             <div class="accordion-item">
@@ -472,7 +523,7 @@
                     </div>
                 </div>
             </section>
-            <footer class="footer" data-aos="fade-up-right">
+            <footer class="footer">
                 <div class="container">
                     <div class="row pt-5 pb-2">
                         <div class="dashboard-visit d-flex justify-content-center align-items-center">
@@ -543,9 +594,9 @@
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-          AOS.init({
-            duration: 1500
-          });
+            AOS.init({
+                duration: 1500
+            });
         </script>
     </body>
 

@@ -61,7 +61,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", sans-serif ;
+  font-family: "Montserrat", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -106,11 +106,14 @@ html {
   overflow-x: hidden !important;
 }
 
-
 /* SECTION PART ONE */
 .navbar-toggler {
   border: none;
   padding: none;
+}
+.bg-navbar {
+  background-color: #fae7ff;
+  border-bottom: 1px solid #e7d3ec;
 }
 .part-1 {
   background-color: #fbedff;
@@ -119,21 +122,41 @@ html {
   background-color: #8f00b2;
   box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 8px 26px 8px 26px;
   color: #ffffff;
+}
+.kreater-btn-2 {
+  border: 1px solid #8f00b2;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px 26px 8px 26px;
+}
+.kreater-btn-3 {
+  color: #8f00b2;
+  border: 1px solid #8f00b2;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px 56px 8px 56px;
 }
 .kreater-btn:hover {
   background-color: #8f00b2;
   color: #ffffff;
 }
+.kreater-btn-3:hover {
+  background-color: #ffffff;
+  color: #8f00b2;
+  border: 1px solid #8f00b2;
+}
 .kreater-btn:active {
   color: #ffffff !important;
   background-color: #8f00b2 !important;
   border-color: transparent !important;
+}
+.icon-color {
+  color: #a08fa4;
+}
+.start-ship-icon {
+  color: #8f00b2 !important;
 }
 .nav-item .active {
   font-weight: 600;
@@ -142,7 +165,7 @@ html {
   color: #8f00b2 !important;
 }
 .my-7 {
-  padding-top: 125px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 .head-text-1 {
@@ -156,12 +179,34 @@ html {
 .text-orange {
   color: #ff7d00;
 }
+.text-purple {
+  color: #8f00b2;
+}
 .p-text-1 {
   font-size: 25px;
   line-height: 30px;
 }
 .trustee {
   font-weight: 700;
+}
+.ship-calc {
+  margin-bottom: 50px;
+}
+.start-shipping {
+  cursor: pointer;
+}
+.ship-calculator {
+  cursor: pointer;
+}
+.start-ship-text {
+  font-weight: 600;
+  line-height: 24px;
+  color: #8f00b2;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #8f00b2;
+}
+.hidden {
+  display: none;
 }
 
 /* SECTION PART TWO */
@@ -175,14 +220,31 @@ html {
 }
 .k-border {
   border: 1px solid #8f00b2;
+  background-color: transparent;
   border-radius: 4px;
   padding: 40px 50px 30px 20px;
+  cursor: pointer;
 }
+/* .k-border:hover{
+  background-color: #fbedff;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 40px 50px 30px 20px;
+  cursor: pointer;
+} */
 .k-border-2 {
   background-color: #fbedff;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 40px 50px 30px 20px;
+  cursor: pointer;
 }
+/* .k-border-2:hover{
+  border: 1px solid #8f00b2;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+} */
 .k-border-header {
   font-family: "NeueMachina-Ultrabold";
   font-style: normal;
@@ -228,7 +290,7 @@ html {
   background-color: #8f00b2;
   box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  padding: 15px 26px 15px 26px;
+  padding: 15px 60px 15px 60px;
   color: #ffffff;
 }
 .ship-btn:hover {
@@ -540,7 +602,281 @@ html {
 /* 
 ======================================================================================================================================
 
-------------------------------------------------  RESPONSIVE MEDIA QUERIES  ---------------------------------------------------------
+------------------------------------------------  GET STARTED STYLES  ---------------------------------------------------------
 
 ======================================================================================================================================
 */
+
+.get-started-span {
+  font-weight: 600;
+}
+.mini-importers {
+  background-color: rgba(255, 125, 0, 0.07);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  padding: 60px 50px;
+}
+/* .mini-importers:hover{
+  background-color: #8f00b2;
+  color: #fff !important;
+} */
+.major-importers {
+  background-color: #8f00b2;
+  color: white;
+  padding: 60px 50px;
+}
+.mini-details > i {
+  -webkit-text-stroke: 0.4px;
+  color: purple;
+}
+.major-details > i {
+  -webkit-text-stroke: 0.4px;
+  color: white;
+}
+.major-details > .btn {
+  color: #8f00b2;
+  background-color: #fff;
+}
+.special-i {
+  color: #212a2e !important;
+}
+
+/* PROGRESS BAR CSS STYLES */
+.my-100 {
+  margin: 90px 0px 50px 0px;
+}
+.p-width{
+  width: 50%;
+}
+.container-progress-bar {
+  max-width: 800px;
+  width: 80%;
+  max-height: 400px;
+  height: 80%;
+  position: relative;
+  /* filter: drop-shadow(16px 16px 20px rgba(132, 98, 115, 0.4)); */
+}
+
+.container-progress-bar:before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 150%;
+  width: 150%;
+  z-index: -10;
+}
+
+.content {
+  border-radius: 32px;
+  top: 70px; /* Leave space for the progress bar */
+  position: absolute; /* Place each text container on top of each other. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.5em; */
+  width: 100%;
+  height: 450px;
+  left: 0;
+  padding: 1em 3em;
+  display: none; /* Hide all text containers */
+  background: #fff; /* Add background so when next text containers are shown, the previous one are not being seen anymore. */
+}
+
+.steps-header {
+  color: var(--gunmetal, #212a2e);
+  /* font-size: 37px; */
+  text-align: center;
+  font-family: "NeueMachina-Regular";
+}
+.steps-text {
+  color: var(--gunmetal, #212a2e);
+  font-size: 20px;
+  text-align: center;
+  font-family: Montserrat;
+  margin: 10px 0px 25px 0px;
+}
+.steps-form {
+  width: 50%;
+  border: 1px solid rgba(190, 190, 190, 0.5);
+  color: #bebebe80;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+}
+.small-text{
+  margin-top: 15px;
+  font-size: 14px;
+  color: #212A2E;
+}
+.small-text span, .unique{
+  color: #FF7D00;
+  font-weight: 600;
+}
+.step {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 25%;
+}
+
+/* Circles referencing each step */
+.step:after {
+  content: ""; /* Content will be assign to each circle independently */
+  position: absolute;
+  width: 35px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 1.2em;
+  height: 35px;
+  border-radius: 50%;
+  background: none;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  background: #e9eaea; /* Setting background so that part of the progress line is not seen */
+  transition: 0.5s ease-in-out; /* Transition for color fill */
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center; /* Center text */
+  justify-content: center;
+}
+
+.step.first:after {
+  content: "1";
+}
+
+.step.second:after {
+  content: "2";
+}
+
+.step.third:after {
+  content: "3";
+}
+.step.fourth:after {
+  content: "4";
+}
+
+/* Progress bar, before each step circle */
+.step:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  background: #212a2e1a;
+  transition: 0.1s ease-in-out;
+}
+
+/* Hide the progress bar before the first step circle */
+.step.first:before {
+  display: none;
+}
+
+/* Each "button" */
+.label {
+  background-color: #8f00b2;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 8px 26px 8px 26px;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  width: 40%;
+  /* position: absolute; */
+  right: 4em;
+  bottom: 2em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  user-select: none; /* Just so the text can't be seleted. Not needed. */
+  -webkit-user-select: none; /* Just so the text can't be seleted. Not needed. */
+}
+
+.label:hover {
+  background-color: #8f00b2;
+  color: #ffffff;
+}
+
+/* Hide all checkboxes. They are not needed since they can be checked with the labels. */
+input[name="toggler"] {
+  display: none;
+}
+
+/* Show the (.content) placed immediately after a checked checkbox. */
+input[name="toggler"]:checked + .content {
+  display: flex;
+}
+
+/* Change the background and color of the step circle located right after a checked checkbox and (.content). */
+
+input[name="toggler"]:checked + .content + .step:after {
+  background: #8f00b2;
+  color: #fff;
+}
+
+/* Change the background and color of the progress bar located right after a checked checkbox and (.content). */
+input[name="toggler"]:checked + .content + .step:before {
+  background: #212a2e;
+}
+
+/* Change color of each step circles after a NOT selected checkbox. */
+input:not(:checked) + .step {
+  color: white;
+}
+
+/* Change the background and color of the step circle located right after a NOT checked checkbox. */
+input:not(:checked) + .step:after {
+  border-color: white;
+  color: white;
+}
+
+@media (max-width: 780px) {
+  .container-progress-bar {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-progress-bar {
+    max-height: 550px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-progress-bar {
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container-progress-bar {
+    max-height: 800px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-progress-bar {
+    max-height: 900px;
+  }
+}
+
+/* CREATE ACCOUNT STYLES */
+.user-name{
+  color: #8f00b2;
+}
+.f-column{
+  flex-direction: column;
+}
+.form-control:focus, .btn:focus {
+  outline: none;
+  border-color: #121212;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.forgot-pass{
+  color: #ff7d00;
+  font-size: 14px;
+}
